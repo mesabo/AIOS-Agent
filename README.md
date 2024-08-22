@@ -118,7 +118,7 @@ ollama serve
 To use models provided by ollama, you need to pull the available models from https://ollama.com/library
 
 ```bash
-ollama pull llama3:8b # use llama3:8b for example
+ollama pull llama3.1 # use llama3.1 for example
 ```
 
 ollama can support CPU-only environment, so if you do not have CUDA environment
@@ -126,14 +126,14 @@ ollama can support CPU-only environment, so if you do not have CUDA environment
 You can run aios with ollama models by
 
 ```python
-python main.py --llm_name ollama/llama3:8b --use_backend ollama # use ollama/llama3:8b for example
+python main.py --llm_name ollama/llama3.1 --use_backend ollama # use ollama/llama3.1 for example
 ```
 
 However, if you have the GPU environment, you can also pass GPU-related parameters to speed up
 using the following command
 
 ```python
-python main.py --llm_name ollama/llama3:8b --use_backend ollama --max_gpu_memory '{"0": "24GB"}' --eval_device "cuda:0" --max_new_tokens 256
+python main.py --llm_name ollama/llama3.1 --use_backend ollama --max_gpu_memory '{"0": "24GB"}' --eval_device "cuda:0" --max_new_tokens 256
 ```
 
 #### Use with native huggingface llm models
@@ -224,15 +224,16 @@ Interact with all agents by using the `@` to tag an agent.
 ```
 
 ## 🚀 Contributions
-For how to contribute, see [CONTRIBUTE](https://github.com/agiresearch/AIOS/blob/main/CONTRIBUTE.md). If you would like to contribute to the codebase, [issues](https://github.com/agiresearch/AIOS/issues) or [pull requests](https://github.com/agiresearch/AIOS/pulls) are always welcome!
+![mesabo](https://github.com/mesabo.png?size=100)
 
-## 🌍 AIOS Contributors
-[![AIOS contributors](https://contrib.rocks/image?repo=agiresearch/AIOS&max=300)](https://github.com/agiresearch/AIOS/graphs/contributors)
+[mesabo](https://github.com/mesabo)
 
+For how to contribute, see [CONTRIBUTE](https://github.com/agiresearch/AIOS/blob/main/CONTRIBUTE.md). If you would like to contribute to the codebase, [issues](https://github.com/mesabo/AIOS-Agent/issues) or [pull requests](https://github.com/mesabo/AIOS-Agent/pulls) are always welcome!
 
-## 🤝 Discord Channel
-If you would like to join the community, ask questions, chat with fellows, learn about or propose new features, and participate in future developments, join our [Discord Community](https://discord.gg/B2HFxEgTJX)!
+## 🌍 AIOS-Agent Contributors
+[![AIOS contributors](https://contrib.rocks/image?repo=mesabo/AIOS-Agent&max=300)](https://github.com/mesabo/AIOS-Agent/graphs/contributors)
+
 
 ## 📪 Contact
 
-For issues related to AIOS development, we encourage submitting [issues](https://github.com/agiresearch/AIOS/issues), [pull requests](https://github.com/agiresearch/AIOS/pulls), or initiating discussions in the AIOS [Discord Channel](https://discord.gg/B2HFxEgTJX). For other issues please feel free to contact Kai Mei (marknju2018@gmail.com) and Yongfeng Zhang (yongfeng@email.com).
+For issues related to AIOS development, we encourage submitting [issues](https://github.com/mesabo/AIOS-Agent/issues), [pull requests](https://github.com/mesabo/AIOS-Agent/pulls) Mesabo (messouaboya17@email.com).
