@@ -72,6 +72,8 @@ pip install -r requirements.txt
 > For the config of LLM endpoints, multiple API keys may be required to set up.
 > Here we provide the .env.example to for easier configuration of these API keys, you can just copy .env.example as .env and set up the required keys based on your needs.
 
+Note: `main.py` is deprecated. Please use `exec.py` for the WebUI, or `agent_repl.py` for the TUI.
+
 #### Use with OpenAI API
 You need to get your OpenAI API key from https://platform.openai.com/api-keys.
 Then set up your OpenAI API key as an environment variable
@@ -199,6 +201,9 @@ python exec.py
 which should open up `https://localhost:3000` (if it doesn't, navigate to that on your browser)
 
 Interact with all agents by using the `@` to tag an agent.
+
+### Supported Agent Framework
+- [autogen](https://github.com/microsoft/autogen)
 
 ### Supported LLM Endpoints
 - [OpenAI API](https://platform.openai.com/api-keys)
